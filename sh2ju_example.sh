@@ -16,7 +16,7 @@ juLog  -name=myFalseCommand                 false
 juLog  -name=mySleepCommand                 sleep 5
 
 #### The test fails because the word 'world' is found in command output
-juLog  -name=myErrorCommand -ierror=world   echo Hello World
+juLog  -name=myErrorCommand -ierror=World   echo Hello World
 
 #### A sql command
 juLog  -name=mySqlCommand                   psql -h localhost -U postgres -c 'select now()'
